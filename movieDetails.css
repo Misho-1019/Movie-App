@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 5px auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 30px;
+}
+
+.movie-poster {
+    flex: 1;
+}
+
+.movie-poster img {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.movie-details {
+    flex: 2;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #e50914;
+}
+
+p {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.year-genre {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+}
+
+.actors {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+}
+
+.plot {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.favorites-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 10px;
+    color: #141414;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.favorites-btn:hover {
+    background-color: #f40612;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #e50914;
+    border: none;
+    border-radius: 10px;
+    color: #141414;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background-color: #f40612;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .movie-poster {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .year-genre,
+    .actors,
+    .plot{
+        font-size: 1rem;
+    }
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e50914;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.notification.show {
+    display: block;
+    opacity: 1;
+}
+
+.notification.hide {
+    opacity: 0;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="./movieDetails.css">
+</head>
+<body>
+    <div class="container">
+        <div class="movie-poster">
+            <img id="movie-poster" src="" alt="Movie Poster">
+        </div>
+        <div id="movie-details">
+            <h1 id="movie-title">Movie Title</h1>
+            <p class="year-genre">
+                <span id="movie-year">Year</span> | <span id="movie-genre">Genre</span>
+            </p>
+            <p class="actors">
+                <strong>Actors:</strong> <span id="movie-actors">Actor Names</span>
+            </p>
+            <p class="plot" id="movie-plot">Movie plot goes here...</p>
+            <button class="favorites-btn" id="add-to-favorites-btn">Add to Favorites</button>
+            <button onclick="window.location.href='index.html'" class="back-btn">Back</button>
+        </div>
+    </div>
+
+
+    <script src="detailsView.js"></script>
+    <div id="notification" class="notification"></div>
+</body>
+</html>
